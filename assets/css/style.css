@@ -1,0 +1,1188 @@
+:root{
+
+--primary:#2563EB;
+
+--secondary:#1E293B;
+
+--background:#0F172A;
+
+--text:#FFFFFF;
+
+--muted:#CBD5E1;
+
+}
+
+*{
+
+margin:0;
+
+padding:0;
+
+box-sizing:border-box;
+
+}
+
+html{
+
+scroll-behavior:smooth;
+
+}
+
+body{
+
+background:var(--background);
+
+font-family:'Segoe UI',sans-serif;
+
+color:white;
+
+}
+
+.navbar{
+
+background:rgba(15,23,42,.85);
+
+backdrop-filter:blur(12px);
+
+}
+
+.navbar-brand{
+
+font-size:28px;
+
+letter-spacing:2px;
+
+}
+
+.nav-link{
+
+margin-left:18px;
+
+font-weight:500;
+
+transition:.3s;
+
+}
+
+.nav-link:hover{
+
+color:var(--primary);
+
+}
+
+.hero{
+
+min-height:100vh;
+
+display:flex;
+
+align-items:center;
+
+padding-top:80px;
+
+}
+
+.hero-greeting{
+
+font-size:22px;
+
+color:#94A3B8;
+
+}
+
+.hero h1{
+
+font-size:64px;
+
+font-weight:700;
+
+line-height:1.1;
+
+}
+
+.hero h1 span{
+
+display:block;
+
+color:var(--primary);
+
+}
+
+.hero h3{
+
+margin:25px 0;
+
+font-size:28px;
+
+font-weight:600;
+
+min-height:45px;
+
+}
+
+.hero-desc{
+
+font-size:18px;
+
+line-height:34px;
+
+color:var(--muted);
+
+max-width:620px;
+
+}
+
+.btn{
+
+padding:14px 32px;
+
+border-radius:50px;
+
+font-weight:600;
+
+}
+
+.hero-image{
+
+width:420px;
+
+animation:float 4s ease-in-out infinite;
+
+}
+
+@keyframes float{
+
+0%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-18px);
+
+}
+
+100%{
+
+transform:translateY(0);
+
+}
+
+}
+/* ===========================
+   STATISTICS
+=========================== */
+
+.statistics{
+
+padding:90px 0;
+
+background:#111827;
+
+}
+
+.stat-card{
+
+background:#1E293B;
+
+padding:35px;
+
+border-radius:18px;
+
+transition:.35s;
+
+}
+
+.stat-card:hover{
+
+transform:translateY(-10px);
+
+}
+
+.stat-card h2{
+
+font-size:52px;
+
+font-weight:700;
+
+color:var(--primary);
+
+}
+
+.stat-card p{
+
+margin-top:10px;
+
+font-size:18px;
+
+color:#CBD5E1;
+
+}
+
+
+
+/* ==================================================
+   ROLE PAGE
+================================================== */
+
+.role-page{
+
+    background:#0F172A;
+
+    color:#fff;
+
+}
+
+/* ==================================================
+   COLOR THEME
+================================================== */
+
+.network-theme{
+
+    --accent:#3B82F6;
+
+}
+
+.database-theme{
+
+    --accent:#10B981;
+
+}
+
+.automation-theme{
+
+    --accent:#8B5CF6;
+
+}
+
+/* ==================================================
+   HERO
+================================================== */
+
+.role-hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    position:relative;
+
+    overflow:hidden;
+
+    padding-top:90px;
+
+}
+
+/* background glow */
+
+.role-hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:450px;
+
+    height:450px;
+
+    background:var(--accent);
+
+    filter:blur(180px);
+
+    opacity:.15;
+
+    top:-150px;
+
+    right:-150px;
+
+    border-radius:50%;
+
+}
+
+/* background grid */
+
+.role-hero::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background-image:
+
+        linear-gradient(rgba(255,255,255,.04) 1px, transparent 1px),
+
+        linear-gradient(90deg, rgba(255,255,255,.04) 1px, transparent 1px);
+
+    background-size:40px 40px;
+
+    z-index:-1;
+
+}
+
+.role-badge{
+
+    display:inline-block;
+
+    padding:10px 18px;
+
+    border-radius:30px;
+
+    background:rgba(255,255,255,.08);
+
+    border:1px solid rgba(255,255,255,.12);
+
+    color:var(--accent);
+
+    font-weight:600;
+
+    letter-spacing:1px;
+
+    margin-bottom:25px;
+
+}
+
+
+.role-hero h1{
+
+    font-size:62px;
+
+    font-weight:700;
+
+    line-height:1.15;
+
+    margin-bottom:25px;
+
+}
+
+.role-hero p{
+
+    color:#CBD5E1;
+
+    font-size:18px;
+
+    line-height:34px;
+
+    max-width:650px;
+
+}
+
+/* ==================================================
+   TAG
+================================================== */
+
+.hero-tags{
+
+    margin-top:35px;
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:12px;
+
+}
+
+.hero-tags span{
+
+    padding:10px 18px;
+
+    border-radius:25px;
+
+    background:#1E293B;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:.3s;
+
+}
+
+.hero-tags span:hover{
+
+    background:var(--accent);
+
+    transform:translateY(-4px);
+
+}
+
+/* ==================================================
+   ICON HERO
+================================================== */
+
+.hero-circle{
+
+    width:320px;
+
+    height:320px;
+
+    margin:auto;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:linear-gradient(
+        135deg,
+        rgba(255,255,255,.08),
+        rgba(255,255,255,.02)
+    );
+
+    backdrop-filter:blur(15px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    box-shadow:0 0 80px rgba(0,0,0,.35);
+
+}
+
+.hero-circle i{
+
+    font-size:110px;
+
+    color:var(--accent);
+
+}
+
+/* ==================================================
+   SECTION
+================================================== */
+
+.section{
+
+    padding:110px 0;
+
+}
+
+.bg-dark-section{
+
+    background:#111827;
+
+}
+
+.section-title{
+
+    margin-bottom:50px;
+
+}
+
+.section-title h2{
+
+    font-size:40px;
+
+    font-weight:700;
+
+    position:relative;
+
+}
+
+.section-title h2::after{
+
+    content:"";
+
+    width:70px;
+
+    height:4px;
+
+    background:var(--accent);
+
+    display:block;
+
+    margin-top:14px;
+
+    border-radius:20px;
+
+}
+
+.section-text{
+
+    color:#CBD5E1;
+
+    font-size:18px;
+
+    line-height:34px;
+
+}
+
+/* ==================================================
+   SKILL CARD
+================================================== */
+
+.skill-card{
+
+    background:#1E293B;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    transition:.35s;
+
+    height:100%;
+
+    border:1px solid transparent;
+
+}
+
+.skill-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:var(--accent);
+
+}
+
+.skill-card i{
+
+    font-size:45px;
+
+    color:var(--accent);
+
+    margin-bottom:25px;
+
+}
+
+.skill-card h4{
+
+    margin-bottom:18px;
+
+}
+
+.skill-card p{
+
+    color:#CBD5E1;
+
+    line-height:30px;
+
+}
+
+/* ==================================================
+   TECH STACK
+================================================== */
+
+.tech-grid{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:18px;
+
+}
+
+.tech-grid span{
+
+    padding:12px 22px;
+
+    background:#1E293B;
+
+    border-radius:30px;
+
+    transition:.3s;
+
+    cursor:pointer;
+
+}
+
+.tech-grid span:hover{
+
+    background:var(--accent);
+
+    transform:translateY(-5px);
+
+}
+
+/* ==================================================
+   PROJECT CARD
+================================================== */
+
+.project-card{
+
+    background:#1E293B;
+
+    border-radius:20px;
+
+    padding:35px;
+
+    margin-bottom:30px;
+
+    transition:.35s;
+
+}
+
+.project-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.project-card h4{
+
+    margin-bottom:20px;
+
+}
+
+.project-card p{
+
+    color:#CBD5E1;
+
+}
+
+.project-card a{
+
+    color:var(--accent);
+
+    text-decoration:none;
+
+    font-weight:600;
+
+}
+
+/* ==================================================
+   TIMELINE
+================================================== */
+
+.timeline{
+
+    border-left:3px solid var(--accent);
+
+    padding-left:35px;
+
+}
+
+.timeline-item{
+
+    margin-bottom:45px;
+
+    position:relative;
+
+}
+
+.timeline-item::before{
+
+    content:"";
+
+    width:16px;
+
+    height:16px;
+
+    background:var(--accent);
+
+    border-radius:50%;
+
+    position:absolute;
+
+    left:-44px;
+
+    top:8px;
+
+}
+
+.timeline-item span{
+
+    display:block;
+
+    color:#94A3B8;
+
+    margin:12px 0;
+
+}
+
+.timeline-item p{
+
+    color:#CBD5E1;
+
+}
+
+/* ==================================================
+   FOOTER
+================================================== */
+
+footer{
+
+    background:#020617;
+
+    padding:35px;
+
+    color:#94A3B8;
+
+}
+
+/* ==================================================
+   RESPONSIVE
+================================================== */
+
+@media(max-width:991px){
+
+.role-hero{
+
+    text-align:center;
+
+}
+
+.role-hero h1{
+
+    font-size:46px;
+
+}
+
+.hero-circle{
+
+    width:220px;
+
+    height:220px;
+
+    margin-top:60px;
+
+}
+
+.hero-circle i{
+
+    font-size:75px;
+
+}
+
+.hero-tags{
+
+    justify-content:center;
+
+}
+
+.section{
+
+    padding:80px 0;
+
+}
+
+}
+/* ==========================================
+FEATURED ROLE
+========================================== */
+
+.featured-role{
+
+padding:110px 0;
+
+}
+
+.role-link{
+
+text-decoration:none;
+
+color:white;
+
+display:block;
+
+}
+
+.role-card{
+
+position:relative;
+
+overflow:hidden;
+
+padding:45px;
+
+border-radius:22px;
+
+background:#1E293B;
+
+height:100%;
+
+transition:all .4s ease;
+
+border:1px solid rgba(255,255,255,.05);
+
+cursor:pointer;
+
+}
+.role-card::before{
+
+content:"";
+
+position:absolute;
+
+top:0;
+
+left:-120%;
+
+width:60%;
+
+height:100%;
+
+background:linear-gradient(
+
+90deg,
+
+transparent,
+
+rgba(255,255,255,.08),
+
+transparent
+
+);
+
+transform:skewX(-25deg);
+
+transition:.7s;
+
+}
+
+.role-card:hover{
+
+transform:translateY(-12px) scale(1.02);
+
+box-shadow:
+
+0 15px 40px rgba(0,0,0,.35);
+
+}
+
+.role-card:hover::before{
+
+left:150%;
+
+}
+
+.role-icon{
+
+font-size:70px;
+
+margin-bottom:35px;
+
+transition:.35s;
+
+}
+
+.role-card:hover .role-icon{
+
+transform:scale(1.15) rotate(-6deg);
+
+}
+
+.role-card h3{
+
+transition:.35s;
+
+}
+
+
+.role-card:hover h3{
+
+transform:translateX(6px);
+
+}
+
+.role-button{
+
+margin-top:40px;
+
+font-weight:600;
+
+transition:.35s;
+
+}
+
+.role-card:hover .role-button{
+
+transform:translateX(10px);
+
+}
+
+/* Blue */
+
+.role-network .role-icon{
+
+color:#3B82F6;
+
+}
+
+.role-network:hover{
+
+border-color:#3B82F6;
+
+background:linear-gradient(
+135deg,
+#1E293B,
+#243B66
+);
+
+box-shadow:0 15px 35px rgba(59,130,246,.25);
+
+}
+
+/* Emerald */
+
+.role-database .role-icon{
+
+color:#10B981;
+
+}
+
+.role-database:hover{
+
+border-color:#10B981;
+
+background:linear-gradient(
+135deg,
+#1E293B,
+#123A35
+);
+
+box-shadow:0 15px 35px rgba(16,185,129,.25);
+
+}
+
+/* Purple */
+
+.role-automation .role-icon{
+
+color:#8B5CF6;
+
+}
+
+.role-automation:hover{
+
+border-color:#8B5CF6;
+
+background:linear-gradient(
+135deg,
+#1E293B,
+#35245E
+);
+
+box-shadow:0 15px 35px rgba(139,92,246,.30);
+
+}
+
+
+/* CSS STUDY KASUS */
+
+.carousel-inner img{
+    border-radius:15px;
+    max-height:550px;
+    object-fit:contain;
+    background:#111827;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
+    background-color:rgba(0,0,0,.6);
+    border-radius:50%;
+    padding:18px;
+}
+
+.modal-content{
+
+border-radius:20px;
+
+border:1px solid rgba(255,255,255,.08);
+
+}
+
+.modal-body img{
+
+border-radius:15px;
+
+}
+
+.modal-body .badge{
+
+margin:5px;
+
+padding:8px 14px;
+
+font-size:13px;
+
+border-radius:30px;
+
+}
+
+
+/* CSS PAGE ABOUT */
+
+.profile-about{
+
+width:280px;
+
+height:280px;
+
+object-fit:cover;
+
+border:5px solid #2f6bff;
+
+}
+
+.section-tag{
+
+color:#2f6bff;
+
+font-weight:700;
+
+letter-spacing:2px;
+
+}
+
+.glass-card{
+
+background:#1b263b;
+
+border:1px solid rgba(255,255,255,.05);
+
+border-radius:20px;
+
+transition:.3s;
+
+}
+
+.glass-card:hover{
+
+transform:translateY(-6px);
+
+box-shadow:0 20px 40px rgba(0,0,0,.35);
+
+}
+
+.progress{
+
+height:12px;
+
+background:#2b3447;
+
+border-radius:20px;
+
+}
+
+.progress-bar{
+
+font-size:10px;
+
+font-weight:bold;
+
+}
+
+/* CSS PAGE EXPERIENCE */
+
+/* ===========================
+   EXPERIENCE TIMELINE
+=========================== */
+
+.timeline{
+
+position:relative;
+
+max-width:900px;
+
+margin:auto;
+
+padding-left:30px;
+
+border-left:3px solid #2f6bff;
+
+}
+
+.timeline-item{
+
+position:relative;
+
+margin-bottom:50px;
+
+}
+
+.timeline-dot{
+
+position:absolute;
+
+left:-42px;
+
+top:20px;
+
+width:18px;
+
+height:18px;
+
+background:#2f6bff;
+
+border-radius:50%;
+
+box-shadow:0 0 20px #2f6bff;
+
+}
+
+.timeline-card{
+
+padding:30px;
+
+}
+
+.timeline-year{
+
+display:inline-block;
+
+margin-bottom:15px;
+
+font-weight:bold;
+
+color:#6ea8ff;
+
+letter-spacing:1px;
+
+}
+
+/*==========================
+CONTACT
+===========================*/
+
+.contact-card{
+
+padding:35px 25px;
+
+transition:.35s;
+
+height:100%;
+
+}
+
+.contact-card:hover{
+
+transform:translateY(-10px);
+
+}
+
+.contact-icon{
+
+font-size:60px;
+
+transition:.3s;
+
+}
+
+.contact-card:hover .contact-icon{
+
+transform:scale(1.15);
+
+}
+
+.contact-card h4{
+
+margin-top:20px;
+
+font-weight:700;
+
+}
+
+.contact-card p{
+
+color:#adb5bd;
+
+min-height:60px;
+
+}
