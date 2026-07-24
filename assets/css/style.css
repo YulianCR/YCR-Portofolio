@@ -1186,3 +1186,28 @@ color:#adb5bd;
 min-height:60px;
 
 }
+
+CONTACT DOWNLOAD CV 
+
+.resume-section{
+    background:#f8f9fa;
+}
+
+.resume-section .card{
+    transition:.3s;
+    border-radius:15px;
+}
+
+.resume-section .card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 10px 30px rgba(0,0,0,.12);
+}
+
+.resume-section h4{
+    font-weight:700;
+    margin-bottom:15px;
+}
+
+.resume-section .btn{
+    margin-top:15px;
+}
